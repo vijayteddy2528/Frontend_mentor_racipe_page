@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    background-color: #f3e6d8;
+    color: #5f574e;
+}
+
+.young-font {
+    font-family: "Young Serif", serif;
+}
+
+.list-style {
+    color: #5f574e;
+    padding: 0 25px;
+}
+
+.list-style li {
+    padding-left: 15px;
+}
+
+.list-style li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.list-style li::marker {
+    color: #854632;
+    font-weight: 600;
+}
+
+.list-style li span {
+    font-weight: 600;
+}
+
+.card {
+    width: 800px;
+    background-color: white;
+    margin: 100px auto;
+    border-radius: 20px;
+}
+
+@media (max-width: 970px) {
+    .card {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+.card img {
+    width: 720px;
+    margin: 40px 40px 0;
+    border-radius: 10px;
+}
+
+@media (max-width: 970px) {
+    .card img {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+}
+
+@media (max-width: 970px) {
+    .details {
+        padding: 30px;
+    }
+}
+
+.card .details h1 {
+    color: #302d2c;
+}
+
+.card .details p {
+    color: #5f574e;
+    font-size: 17px;
+}
+
+@media (max-width: 970px) {
+    .card .details p {
+        font-size: 19px;
+    }
+}
+
+.card .details .pre-time {
+    background-color: #fff5fa;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.card .details .pre-time h3 {
+    color: #7b284f;
+    margin-bottom: 15px;
+}
+
+.card .details .pre-time .list-style li::marker {
+    color: #7b284f;
+}
+
+.card .details h2 {
+    color: #854632;
+}
+
+.card .details table {
+    border-collapse: collapse;
+}
+
+.card .details table tbody tr {
+    border-bottom: 1px solid #e4ded8;
+}
+
+.card .details table tbody tr td {
+    padding: 10px 30px;
+}
+
+.card .details table tbody tr td:nth-of-type(2) {
+    color: #854632;
+    font-weight: 700;
+}
